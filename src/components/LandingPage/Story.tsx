@@ -1,4 +1,4 @@
-import aboutImg from "../assets/IMG_4589_g6a1txe59e.png";
+import aboutImg from "../../assets/IMG_4589_g6a1txe59e.png";
 
 export function Story() {
   return (

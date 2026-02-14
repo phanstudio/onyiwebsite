@@ -1,12 +1,13 @@
 import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { Story } from './components/Story';
-import { TechStack } from './components/TechStack';
-import { Projects } from './components/Projects';
-import { Notes } from './components/Notes';
-import { Talks } from './components/Talks';
-import { Articles } from './components/Articles';
+import { Hero } from './components/LandingPage/Hero';
+import { Story } from './components/LandingPage/Story';
+import { TechStack } from './components/LandingPage/TechStack';
+import { Projects } from './components/LandingPage/Projects';
+import { Notes } from './components/LandingPage/Notes';
+import { Talks } from './components/LandingPage/Talks';
+import { Articles } from './components/LandingPage/Articles';
 import { Footer } from './components/Footer';
+import { SocialRail } from "./components/SocialRail";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Talks />
       <Articles /> */}
       <Footer />
+      <SocialRail />
     </div>
   );
 }
