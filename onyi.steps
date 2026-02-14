@@ -5,7 +5,7 @@ $ npm audit fix --force
 $ npm fund
 $ npx update-browserslist-db@latest
 $ npm run build
-$ npm run dev
+npm run dev
 $ git init
 $ git add .
-git add --renormalize .
+$ git add --renormalize .

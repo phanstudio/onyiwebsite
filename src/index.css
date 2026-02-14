@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.story-waves {
+    background-image: url("/ghost-wave.svg"), url("/ghost-wave-under.svg");
+    background-position: bottom center, top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+body {
+    @apply font-sans;
+}

@@ -10,16 +10,16 @@ import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#fefaff]">
       <Header />
-      {/* <Hero />
+      <Hero />
       <Story />
-      <TechStack />
+      {/* <TechStack />
       <Projects />
       <Notes />
       <Talks />
-      <Articles />
-      <Footer /> */}
+      <Articles /> */}
+      <Footer />
     </div>
   );
 }
