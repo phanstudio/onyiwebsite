@@ -11,6 +11,7 @@ export default {
           // DEFAULT: 'rgb(14 21 38 / <alpha-value>)',
           DEFAULT: 'rgb(14 21 38)',
         },
+        'custom-orange': 'rgb(213 122 102)',
       },
     },
   },
