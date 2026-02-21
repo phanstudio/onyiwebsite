@@ -16,8 +16,8 @@ function App() {
       <Header />
       <Hero />
       <Story />
-      {/* <TechStack /> */}
-      {/* <Projects /> */}
+      <TechStack />
+      {/* <Projects />s */}
       <Notes />
       {/* <Talks /> */}
       {/* <Articles /> */}

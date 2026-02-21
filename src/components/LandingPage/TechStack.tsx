@@ -1,39 +1,72 @@
+const skills = [
+  "HTML",
+  "(S)CSS",
+  "JavaScript (ES6)",
+  "TypeScript",
+  "React JS",
+  "Redux",
+  "Firebase",
+  "Supabase",
+  "Netlify",
+  "Emotion",
+  "Styled-Components",
+  "Semantic UI",
+  "Tailwind CSS",
+  "Chakra UI",
+  "Next JS",
+  "Node JS",
+  "Git",
+  "ESLint",
+  "Babel",
+  "Webpack",
+  "Jest",
+  "React Testing Library",
+  "Enzyme",
+  "Cypress",
+  "Contentful",
+  "Sanity",
+  "React-Query",
+  "PostgreSQL",
+  "Postmark",
+  "Currently learning Go...",
+  "Currently working with OpenAI",
+];
+
 export function TechStack() {
-  const technologies = [
-    'HTML', 'CSS', 'JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Gatsby',
-    'Svelte', 'Vue.js', 'Node.js', 'Git', 'Github', 'Gitlab', 'React Native',
-    'Storybook', 'Figma', 'GraphQL', 'Apollo', 'Webpack', 'Sass',
-    'Styled Components', 'TailwindCSS', 'Firebase'
-  ];
-
   return (
-    <section className="py-20 px-6 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-4">
-          <span className="text-sm text-gray-500">WHAT I DO</span>
-        </div>
-        <h2 className="text-4xl font-bold text-center mb-4">Tech Stack.</h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Here are some of the technologies I work with and use to build amazing experiences.
-        </p>
+    <section
+      style={{ opacity: 1, transform: "none" }}
+      className="px-6 sm:px-10 md:px-24 lg:px-28 py-12 text-center"
+    >
+      <h2
+        className="mb-3.5 text-gray-600 tracking-wide uppercase font-semibold text-base"
+        style={{ opacity: 1, transform: "none" }}
+      >
+        Skills
+      </h2>
 
-        <div className="flex flex-wrap justify-center gap-3 max-w-5xl mx-auto">
-          {technologies.map((tech) => (
-            <span
-              key={tech}
-              className="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm hover:bg-blue-100 transition-colors"
+      <h4
+        className="mb-7 text-gray-800 text-2xl sm:text-3xl md:text-4xl tracking-wide font-semibold"
+        style={{ opacity: 1, transform: "none" }}
+      >
+        Tech Stack.
+      </h4>
+
+      <p>I have experience working with the following technologies</p>
+
+      <article className="my-8">
+        <ul className="flex flex-wrap items-center justify-center">
+          {skills.map((skill, index) => (
+            <li 
+              key={index}
+              className="px-4 py-2 m-3 text-xs font-semibold text-indigo-900 rounded-full 
+              bg-indigo-50 md:px-8 md:py-4 md:m-4 md:text-sm"
             >
-              {tech}
-            </span>
+              {skill}
+            </li>
           ))}
-        </div>
-
-        <div className="text-center mt-8">
-          <button className="text-blue-600 hover:text-blue-700 text-sm">
-            Honestly, the list goes on...
-          </button>
-        </div>
-      </div>
+        </ul>
+      </article>
     </section>
   );
 }
