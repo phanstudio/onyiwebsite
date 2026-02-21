@@ -13,6 +13,9 @@ export default {
         },
         'custom-orange': 'rgb(213 122 102)',
       },
+      boxShadow: {
+        card: "0 2px 11px 2px rgba(0,0,0,.1)",
+      },
     },
   },
   plugins: [],

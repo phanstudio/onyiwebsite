@@ -18,7 +18,7 @@ function App() {
       <Story />
       {/* <TechStack /> */}
       {/* <Projects /> */}
-      {/* <Notes /> */}
+      <Notes />
       {/* <Talks /> */}
       {/* <Articles /> */}
       <Contact />
