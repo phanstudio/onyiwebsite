@@ -1,19 +1,40 @@
-export function Talks() {
-  return (
-    <section className="py-20 px-6 bg-white relative overflow-hidden">
-      <div className="absolute top-20 left-10 w-32 h-64 bg-gray-200 rounded-full opacity-50"></div>
-      <div className="absolute top-40 right-10 w-48 h-48 bg-orange-300 rounded-full opacity-60"></div>
-      <div className="absolute bottom-20 right-32 w-24 h-24 bg-gray-800 rounded-full opacity-70"></div>
+export const Talks = () => {
+  const talks = [
+    {
+      title: "How to create an online portfolio",
+      link: "https://docs.google.com/presentation/d/1w5lyZjVB4qJmRiEIsh5bABzQ-Dxcm2saVuHj8tB4P_o",
+      label: "Slides",
+    },
+  ];
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-4">
-          <span className="text-sm text-gray-500">TALKS</span>
-        </div>
-        <h2 className="text-4xl font-bold text-center mb-12">Talks. Open Source. Conferences.</h2>
-        <p className="text-center text-gray-600 max-w-2xl mx-auto">
-          I enjoy speaking about topics I'm passionate about.
-        </p>
-      </div>
+  return (
+    <section className="px-6 py-10 sm:px-10 md:px-24 lg:px-28 css-1b2i1yf">
+      <h2 className="mb-3.5 text-base font-semibold tracking-wide uppercase text-gray-600">
+        Community
+      </h2>
+
+      <h4 className="mb-7 text-2xl font-semibold tracking-wide text-gray-800 sm:text-3xl md:text-4xl">
+        Talks, Open Source, Conferences
+      </h4>
+
+      {talks.map((item, i) => (
+        <article className="rounded-md bg-custom-lightGhost hover:scale-105 transition-transform">
+          <div
+            key={i}
+            className="flex w-full items-center justify-between rounded-md border border-gray-400 
+            p-2.5 text-gray-700 hover:border-custom-purple hover:text-custom-purple sm:p-6 mb-6"
+          >
+            <h4 className="text-sm md:text-base">{item.title}</h4>
+
+            <a
+              href={item.link} target="_blank" rel="noopener noreferrer"
+              className="text-xs underline opacity-80 hover:opacity-100"
+            >
+              {item.label}
+            </a>
+          </div>
+        </article>
+      ))}
     </section>
   );
-}
+};

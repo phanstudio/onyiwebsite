@@ -75,7 +75,8 @@ export function Notes() {
         </ul>
 
         <div className="flex">
-          <button className="px-6 py-3 border-none bg-indigo-50 font-semibold cursor-pointer text-xs sm:text-sm rounded-sm sm:px-4 sm:py-3 text-custom-purple hover:bg-indigo-100 flex mt-4 mb-12 ml-auto">
+          <button className="px-6 py-3 border-none bg-indigo-50 font-semibold cursor-pointer text-xs sm:text-sm 
+          rounded-sm sm:px-4 sm:py-3 text-custom-purple hover:bg-indigo-100 flex mt-4 mb-12 ml-auto">
             More Articles
           </button>
         </div>

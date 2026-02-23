@@ -1,45 +1,63 @@
-export function Articles() {
-  const articles = [
-    "Getting to Grips with Component Library As A Developing Engineer",
-    "How to Toggle Nested Folders with Vanilla JS (DOM Tree)",
-    "How to create a carousel slider with ReactJS & TailwindCSS",
-    "How to create a custom slider with CSS",
-    "How to gracefully implement Semantic IDs into React.js A11y",
-    "How to create custom checkboxes, Switches, and Radio Buttons [Part 1 and 2]",
-    "How to Migrate from NextJS to Gatsby.js without losing your content"
+export const Articles = () => {
+  const talks = [
+    {
+      title: "Getting to Grips with Component Library As A Developing Engineer",
+      link: "https://docs.google.com/presentation/d/1w5lyZjVB4qJmRiEIsh5bABzQ-Dxcm2saVuHj8tB4P_o",
+    },
+    {
+      title: "How to Toggle Nested Folders with Vanilla JS (DOM Tree)",
+      link: "https://docs.google.com/presentation/d/1w5lyZjVB4qJmRiEIsh5bABzQ-Dxcm2saVuHj8tB4P_o",
+    },
+    {
+      title: "How to create a carousel slider with ReactJS & TailwindCSS",
+      link: "https://docs.google.com/presentation/d/1w5lyZjVB4qJmRiEIsh5bABzQ-Dxcm2saVuHj8tB4P_o",
+    },
+    {
+      title: "How to create a custom slider with CSS",
+      link: "https://docs.google.com/presentation/d/1w5lyZjVB4qJmRiEIsh5bABzQ-Dxcm2saVuHj8tB4P_o",
+    },
+    {
+      title: "How to gracefully implement Semantic IDs into React.js A11y",
+      link: "https://docs.google.com/presentation/d/1w5lyZjVB4qJmRiEIsh5bABzQ-Dxcm2saVuHj8tB4P_o",
+    },
+    {
+      title: "How to create custom checkboxes, Switches, and Radio Buttons [Part 1 and 2]",
+      link: "https://docs.google.com/presentation/d/1w5lyZjVB4qJmRiEIsh5bABzQ-Dxcm2saVuHj8tB4P_o",
+    },
+    {
+      title: "How to Migrate from NextJS to Gatsby.js without losing your content",
+      link: "https://docs.google.com/presentation/d/1w5lyZjVB4qJmRiEIsh5bABzQ-Dxcm2saVuHj8tB4P_o",
+    },
   ];
 
   return (
-    <section className="py-20 px-6 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-4">
-          <span className="text-sm text-gray-500">WRITINGS</span>
-        </div>
-        <h2 className="text-4xl font-bold text-center mb-16">Published articles.</h2>
+    <section className="px-6 py-10 sm:px-10 md:px-24 lg:px-28 css-xp1dmv">
+      <h2 className="mb-3.5 text-base font-semibold tracking-wide uppercase text-gray-600">
+        Blog posts
+      </h2>
 
-        <div className="space-y-4 max-w-4xl mx-auto">
-          {articles.map((article, index) => (
+      <h4 className="mb-7 text-2xl font-semibold tracking-wide text-gray-800 sm:text-3xl md:text-4xl">
+        Published articles
+      </h4>
+
+      {talks.map((item, i) => (
+        <article className="rounded-md bg-custom-lightGhost hover:scale-105 transition-transform">
+          <div
+            key={i}
+            className="flex w-full items-center justify-between rounded-md border border-gray-400 
+            p-2.5 text-gray-700 hover:border-custom-purple hover:text-custom-purple sm:p-6 mb-6"
+          >
+            <h4 className="text-sm md:text-base">{item.title}</h4>
+
             <a
-              key={index}
-              href="#"
-              className="flex items-center justify-between p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow group"
+              href={item.link} target="_blank" rel="noopener noreferrer"
+              className="text-xs underline opacity-80 hover:opacity-100"
             >
-              <span className="text-gray-700 group-hover:text-black">{article}</span>
-              <div className="flex items-center gap-4">
-                {index < 2 && (
-                  <div className="flex gap-2">
-                    <div className="w-8 h-8 bg-orange-300 rounded-full"></div>
-                    <div className="w-8 h-8 bg-gray-800 rounded-full"></div>
-                  </div>
-                )}
-                <svg className="w-5 h-5 text-gray-400 group-hover:text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
+              {item.label}
             </a>
-          ))}
-        </div>
-      </div>
+          </div>
+        </article>
+      ))}
     </section>
   );
-}
+};

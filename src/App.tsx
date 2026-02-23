@@ -17,10 +17,10 @@ function App() {
       <Hero />
       <Story />
       <TechStack />
-      {/* <Projects />s */}
+      <Projects />
       <Notes />
-      {/* <Talks /> */}
-      {/* <Articles /> */}
+      <Talks />
+      <Articles />
       <Contact />
       <Footer />
       <SocialRail />

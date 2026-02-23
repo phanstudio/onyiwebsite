@@ -17,3 +17,24 @@ text-base {
     font-size: 1rem;
     line-height: 1.5rem;
 }
+
+.css-1b2i1yf {
+    background-repeat: no-repeat;
+    -webkit-background-position: right center;
+    background-position: right center;
+    background-image: url(/pattern-three-sm.png);
+    -webkit-background-size: 10%;
+    background-size: 10%;
+}
+/* 25 */
+
+.css-xp1dmv {
+    background-repeat: no-repeat;
+    -webkit-background-position: right 80%;
+    background-position: right 80%;
+    background-image: url(/pattern-one.png);
+    -webkit-background-size: 17%;
+    background-size: 17%;
+}
+
+/* 45 */
