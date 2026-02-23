@@ -5,7 +5,10 @@ $ npm audit fix --force
 $ npm fund
 $ npx update-browserslist-db@latest
 $ npm run build
+$ npm install react-router-dom
+
 npm run dev
+
 $ git init
 $ git add .
 $ git add --renormalize .

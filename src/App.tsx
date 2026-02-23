@@ -1,29 +1,23 @@
-import { Header } from './components/Header';
-import { Hero } from './components/LandingPage/Hero';
-import { Story } from './components/LandingPage/Story';
-import { Contact } from './components/LandingPage/Contact';
-import { TechStack } from './components/LandingPage/TechStack';
-import { Projects } from './components/LandingPage/Projects';
-import { Notes } from './components/LandingPage/Notes';
-import { Talks } from './components/LandingPage/Talks';
-import { Articles } from './components/LandingPage/Articles';
-import { Footer } from './components/Footer';
-import { SocialRail } from "./components/SocialRail";
+import LandingPage from "./components/LandingPage";
+import { Layout } from './components/layout';
+import { Route, Routes } from 'react-router-dom';
+import NotePage from "./page/NotePage";
+import NotFoundRedirect from "./page/NotFoundRedirect";
+
 
 function App() {
   return (
     <div className="min-h-screen bg-[#fefaff]">
-      <Header />
-      <Hero />
-      <Story />
-      <TechStack />
-      <Projects />
-      <Notes />
-      <Talks />
-      <Articles />
-      <Contact />
-      <Footer />
-      <SocialRail />
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<LandingPage />} />
+          {/* <Route path="/projects" element={<Projects />} /> */}
+          <Route path="/notes" element={<NotePage />} />
+          {/* <Route path="/art" element={<Art />} /> */}
+          {/* <Route path="*" element={<NotFoundRedirect />} /> */}
+        </Route>
+        <Route path="*" element={<NotFoundRedirect />} />
+      </Routes>
     </div>
   );
 }
