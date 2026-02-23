@@ -1,4 +1,4 @@
-import LandingPage from "./components/LandingPage";
+import LandingPage from "./page/LandingPage";
 import { Layout } from './components/layout';
 import { Route, Routes } from 'react-router-dom';
 import NotePage from "./page/NotePage";

@@ -1,10 +1,3 @@
-// import { Navigate, useLocation } from "react-router-dom"
-
-// export default function NotFoundRedirect() {
-//   const location = useLocation()
-//   return <Navigate to={{ pathname: "/", search: location.search }} replace />
-// }
-
 import { Link, useLocation } from "react-router-dom";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
